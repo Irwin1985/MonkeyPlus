@@ -16,8 +16,6 @@ namespace monkey {
     private:
         void readChar();
         char peekChar();
-        bool isLetter(char ch);
-        bool isDigit(char ch);
         std::string readIdentifier();
         std::string readNumber();
         std::string readString();

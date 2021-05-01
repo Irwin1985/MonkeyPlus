@@ -6,11 +6,9 @@
 #define MONKEY___TOKEN_H
 
 #include <string>
-#include <map>
 
 namespace monkey {
     typedef std::string TokenType;
-
     class Token {
     public:
         TokenType type;
@@ -25,7 +23,6 @@ namespace monkey {
             this->literal = std::string(1, ch);
         }
     };
-    TokenType LookupIdent(std::string ident);
 
     // create enumerable
     const TokenType ILLEGAL = "ILLEGAL";
@@ -49,7 +46,6 @@ namespace monkey {
     // keywords
     const TokenType FUNCTION = "FUNCTION";
     const TokenType LET = "LET";
-
 }
 
 #endif //MONKEY___TOKEN_H
